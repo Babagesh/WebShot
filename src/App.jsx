@@ -2,6 +2,7 @@ import './App.css'
 import { useState } from 'react';
 const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 import APIForm from '../components/APIForm'
+import Gallery from '../components/Gallery'
 
 export default function App()
 {
@@ -17,6 +18,8 @@ export default function App()
   const [screenshot, setScreenshot] = useState(null);
 
   const [images, updateImages] = useState([])
+
+
 
   const submitForm = () => {
     let defaultValues = {
@@ -123,6 +126,10 @@ export default function App()
       </div>
 
       <br></br>
+
+      <div className = "container">
+        <Gallery images = {images}/>
+      </div>
     </div>
   );
 }

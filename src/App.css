@@ -83,3 +83,7 @@ input {
   margin-bottom: 20px;
   border-radius: 8px;
 }
+
+.gallery-screenshot {
+  border-radius: 8px;
+}
